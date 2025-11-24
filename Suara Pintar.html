@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suara Pintar - Kompak Cerdas Berkarakter</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #DC2626 0%, #1E40AF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #DC2626 0%, #1E40AF 100%);
+            width: 80px;
+            margin: 0 auto 2rem;
+        }
+        
+        nav {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .hero-pattern {
+            background-image: radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                              radial-gradient(circle at 80% 80%, rgba(30, 64, 175, 0.1) 0%, transparent 50%);
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="min-h-full"><!-- Navigation -->
+  <nav class="fixed w-full top-0 z-50 shadow-md">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+     <div class="flex items-center space-x-3"><img src="https://kadowisudaku.com/wp-content/uploads/2017/09/Logo-Universitas-Pendidikan-Indonesia.png" alt="Logo UPI" class="w-12 h-12 object-contain" onerror="this.style.display='none';">
+      <div>
+       <h1 id="nav-title" class="text-xl font-bold gradient-text">Suara Pintar</h1>
+      </div>
+     </div>
+     <div class="hidden md:flex space-x-6"><a href="Biodata.html">Biodata</a> <a href="#latar-belakang" class="text-gray-700 hover:text-red-600 font-medium transition">Latar Belakang</a> <a href="#solusi" class="text-gray-700 hover:text-red-600 font-medium transition">Solusi</a> <a href="#fitur" class="text-gray-700 hover:text-red-600 font-medium transition">Fitur</a> <a href="#kontak" class="text-gray-700 hover:text-red-600 font-medium transition">Kontak</a>
+     </div>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20"><!-- Background Image -->
+   <div class="absolute inset-0 overflow-hidden">
+    <div class="relative w-full h-full">
+     <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(220, 38, 38, 0.75) 0%, rgba(30, 64, 175, 0.75) 100%), url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/43/74/72/photo1jpg.jpg?w=1200&amp;h=-1&amp;s=1') center/cover;"></div>
+    </div>
+   </div>
+   <div class="absolute inset-0 bg-black/20"></div>
+   <div class="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in-up">
+    <div class="float-animation mb-8"><img src="https://kadowisudaku.com/wp-content/uploads/2017/09/Logo-Universitas-Pendidikan-Indonesia.png" alt="Logo UPI" class="w-24 h-24 mx-auto object-contain" onerror="this.style.display='none';">
+    </div>
+    <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">Suara Pintar</h1>
+    <p class="text-lg md:text-xl text-white mb-12 max-w-3xl mx-auto drop-shadow-md">Media Pembelajaran Interaktif untuk Meningkatkan Keterampilan 
+		Berbicara dan Intonasi Siswa Sekolah Dasar Kelas Tinggi</p>
+   </div>
+  </section><!-- Biodata Section -->
+  <section id="biodata" class="py-20 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="text-center mb-16 fade-in-up">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tim Pengembang Kelompok 4</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f6ff;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #4f46e5, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-divider {
+    width: 100px;
+    height: 4px;
+    background-color: #3b82f6;
+    margin: 20px auto;
+    border-radius: 2px;
+  }
+
+  .team-desc {
+    font-size: 1.25rem;
+    color: #4b5563; /* gray-600 */
+    margin-bottom: 40px;
+  }
+
+  .team-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+
+  .logo-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    margin-bottom: 10px;
+  }
+
+  .logo-container p {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+  }
+</style>
+<body>
+
+<h2 class="gradient-text" style="font-size: 3rem; font-weight:bold;">Tim Pengembang</h2><h3>Kelompok 4</h3>
+<div class="section-divider"></div>
+<p class="team-desc">Suara Pintar</p>
+
+<div class="team-logos">
+  <div class="logo-container">
+    <img src="LOGO UPI.png" alt="Logo Anggota 1">
+  </div>
+  <div class="logo-container">
+    <img src="Logo Kelas.png" alt="Logo Anggota 2">
+  </div>
+</div>
+   <style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .card {
+    width: 220px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    background: #e0e0e0;
+  }
+
+  /* FOTO SERAGAM */
+  .foto {
+    width: 200px;       /* ukuran lebar sama */
+    height: 240px;      /* ukuran tinggi sama */
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px auto;
+  }
+
+  .nama {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .nim {
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+<body>
+  <section><!-- Latar Belakang Section -->
+  <section id="latar-belakang" class="py-20 bg-gradient-to-br from-red-50 via-white to-blue-50">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Latar Belakang</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl">
+     <div class="prose prose-lg max-w-none">
+      <p class="text-gray-700 leading-relaxed mb-6">Keterampilan berbicara dan mempresentasikan merupakan kemampuan penting bagi siswa sekolah dasar, khususnya di kelas tinggi (kelas IV–VI). Kemampuan ini dibutuhkan saat mereka menjelaskan ide, menyampaikan pendapat, atau melakukan presentasi di depan kelas.</p>
+      <p class="text-gray-700 leading-relaxed mb-6">Namun pada kenyataannya, banyak siswa masih mengalami kesulitan dalam mengatur <span class="font-bold text-red-600">intonasi</span>, <span class="font-bold text-blue-600">volume suara</span>, <span class="font-bold text-purple-600">penekanan kata</span>, serta ekspresi saat berbicara.</p>
+      <div class="bg-gradient-to-r from-red-100 to-blue-100 p-6 rounded-xl mb-6">
+       <p class="text-gray-700 leading-relaxed font-semibold">Selama ini pembelajaran berbicara sering hanya diberikan melalui instruksi verbal dari guru tanpa media pendukung yang konkret. Akibatnya, siswa sulit menangkap contoh yang benar, kurang percaya diri ketika harus berbicara, dan tidak terbiasa menyesuaikan intonasi sesuai konteks.</p>
+      </div>
+      <p class="text-gray-700 leading-relaxed mb-6">Padahal, pembelajaran berbicara akan jauh lebih efektif ketika siswa dapat <span class="font-bold text-green-600">melihat dan mendengar model langsung</span>, lalu mencoba menirukannya.</p>
+      <p class="text-gray-700 leading-relaxed">Di sisi lain, media pembelajaran yang spesifik membahas latihan intonasi untuk siswa SD masih sangat terbatas. Penggunaan teknologi seperti <span class="font-bold gradient-text">flipbook interaktif</span> dan <span class="font-bold gradient-text">video demonstrasi</span> dapat menjadi solusi nyata untuk membantu siswa belajar berbicara secara lebih menyenangkan, jelas, dan terarah.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Solusi Section -->
+  <section id="solusi" class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Solusi</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+     <div>
+      <div class="bg-gradient-to-br from-red-600 to-blue-600 p-12 rounded-3xl shadow-2xl text-white">
+       <div class="text-center">
+        <svg class="w-32 h-32 mx-auto mb-6" viewbox="0 0 200 200"><rect x="40" y="20" width="120" height="160" rx="10" fill="white" opacity="0.9" /> <rect x="60" y="40" width="80" height="4" rx="2" fill="#DC2626" /> <rect x="60" y="60" width="80" height="4" rx="2" fill="#1E40AF" /> <rect x="60" y="80" width="60" height="4" rx="2" fill="#DC2626" /> <circle cx="100" cy="120" r="25" fill="#1E40AF" /> <path d="M90 120 L95 125 L110 110" stroke="white" stroke-width="3" fill="none" />
+        </svg>
+        <h3 class="text-3xl font-bold mb-4">Suara Pintar</h3>
+        <p class="text-xl">Flipbook/E-Book Interaktif</p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3 class="text-3xl font-bold text-gray-800 mb-6">Media Pembelajaran Inovatif</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">Sebuah produk media pembelajaran berupa <span class="font-bold text-red-600">Flipbook/E-Book interaktif</span> bernama <span class="font-bold gradient-text">"Suara Pintar"</span>. Produk ini memadukan teori berbicara yang sederhana dengan barcode video berisi contoh latihan intonasi yang diperagakan oleh anggota kelompok.</p>
+      <div class="space-y-4">
+       <div class="flex items-start space-x-3">
+        <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-white font-bold">✓</span>
+        </div>
+        <p class="text-gray-700">Siswa bisa belajar melalui dua cara sekaligus: <span class="font-bold">membaca dan menyimak</span></p>
+       </div>
+       <div class="flex items-start space-x-3">
+        <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-white font-bold">✓</span>
+        </div>
+        <p class="text-gray-700">Video demonstrasi menjadi <span class="font-bold">fitur utama</span>, menampilkan contoh intonasi yang benar secara langsung</p>
+       </div>
+       <div class="flex items-start space-x-3">
+        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><span class="text-white font-bold">✓</span>
+        </div>
+        <p class="text-gray-700">Setelah menonton, siswa dapat <span class="font-bold">menirukan dan mempraktikkan</span> sendiri</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Tujuan Produk Section -->
+  <section id="tujuan" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Tujuan Produk</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+     <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+      <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-6"><span class="text-3xl">🎯</span>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Meningkatkan Keterampilan Berbicara</h3>
+      <p class="text-gray-700">Membantu siswa menguasai intonasi, volume, dan penekanan kata dengan cara yang menyenangkan dan mudah dipahami.</p>
+     </div>
+     <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+      <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-6"><span class="text-3xl">💪</span>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Membangun Kepercayaan Diri</h3>
+      <p class="text-gray-700">Memberikan contoh nyata dan kesempatan latihan yang membuat siswa lebih percaya diri saat berbicara di depan umum.</p>
+     </div>
+     <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+      <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center mb-6"><span class="text-3xl">📚</span>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Pembelajaran Multimodal</h3>
+      <p class="text-gray-700">Mengkombinasikan teks, visual, dan audio untuk pengalaman belajar yang lebih efektif dan menarik.</p>
+     </div>
+     <div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+      <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mb-6"><span class="text-3xl">🚀</span>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Praktik Mandiri</h3>
+      <p class="text-gray-700">Memfasilitasi siswa untuk berlatih secara mandiri dengan panduan yang jelas dan terstruktur.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Fitur Utama Section -->
+  <section id="fitur" class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Fitur Utama</h2>
+     <div class="section-divider"></div>
+     <p class="text-xl text-gray-600">Empat Fitur Unggulan Suara Pintar</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+     <div class="card-hover bg-gradient-to-br from-red-100 to-red-50 p-8 rounded-2xl shadow-lg text-center"><a href="book.html">
+		 <div class="text-6xl mb-6">
+       📚
+      </div>
+		 <h3 class="text-xl font-bold text-gray-800 mb-3">Flipbook</h3></a>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-blue-100 to-blue-50 p-8 rounded-2xl shadow-lg text-center"><a href="sensor.html">
+      <div class="text-6xl mb-6">
+       📱
+      </div>
+		 <h3 class="text-xl font-bold text-gray-800 mb-3">Latihan Intonasi</h3></a>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-green-100 to-green-50 p-8 rounded-2xl shadow-lg text-center">
+      <div class="text-6xl mb-6">
+       🎤
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-3">Panduan Praktik Mandiri</h3>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-purple-100 to-purple-50 p-8 rounded-2xl shadow-lg text-center">
+      <div class="text-6xl mb-6">
+       ✍️
+      </div>
+      <h3 class="text-xl font-bold text-gray-800 mb-3">Lembar Refleksi</h3>
+     </div>
+    </div>
+   </div>
+  </section><!-- Desain Section -->
+  <section id="desain" class="py-20 bg-gradient-to-br from-red-50 via-white to-blue-50">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Pendekatan Desain</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl">
+     <div class="mb-12">
+      <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Multimodal Learning</h3>
+      <p class="text-gray-700 leading-relaxed text-center mb-8">Produk Suara Pintar dirancang dengan pendekatan multimodal learning, di mana siswa belajar melalui kombinasi <span class="font-bold text-red-600">teks</span>, <span class="font-bold text-blue-600">visual</span>, dan <span class="font-bold text-green-600">audio</span>.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+       <div class="text-center p-6 bg-red-50 rounded-xl">
+        <div class="text-5xl mb-4">
+         ������
+        </div>
+        <h4 class="font-bold text-gray-800 mb-2">Teks</h4>
+        <p class="text-gray-700 text-sm">Flipbook memberikan teori dasar yang mudah dibaca</p>
+       </div>
+       <div class="text-center p-6 bg-blue-50 rounded-xl">
+        <div class="text-5xl mb-4">
+         🎬
+        </div>
+        <h4 class="font-bold text-gray-800 mb-2">Visual</h4>
+        <p class="text-gray-700 text-sm">Video memberi contoh konkret dan mudah ditiru</p>
+       </div>
+       <div class="text-center p-6 bg-green-50 rounded-xl">
+        <div class="text-5xl mb-4">
+         ��
+        </div>
+        <h4 class="font-bold text-gray-800 mb-2">Audio</h4>
+        <p class="text-gray-700 text-sm">Demonstrasi suara yang jelas dan ekspresif</p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gradient-to-r from-blue-100 to-purple-100 p-8 rounded-2xl mb-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Learning by Modeling</h3>
+      <p class="text-gray-700 leading-relaxed">Elemen learning by modeling diterapkan – siswa belajar dengan meniru model yang tepat dari video kelompok. Pendekatan ini sesuai dengan karakter siswa kelas tinggi yang mulai mampu berpikir abstrak, namun masih membutuhkan contoh visual/audio untuk memahami keterampilan performatif seperti berbicara.</p>
+     </div>
+     <div class="text-center">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Praktik Bertahap</h3>
+      <div class="flex flex-wrap justify-center items-center gap-4">
+       <div class="bg-red-600 text-white px-6 py-3 rounded-full font-bold">
+        1. Teori
+       </div><span class="text-3xl text-gray-400">→</span>
+       <div class="bg-blue-600 text-white px-6 py-3 rounded-full font-bold">
+        2. Menonton Video
+       </div><span class="text-3xl text-gray-400">→</span>
+       <div class="bg-green-600 text-white px-6 py-3 rounded-full font-bold">
+        3. Mencoba
+       </div><span class="text-3xl text-gray-400">→</span>
+       <div class="bg-purple-600 text-white px-6 py-3 rounded-full font-bold">
+        4. Refleksi
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Keunggulan Section -->
+  <section id="keunggulan" class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Keunggulan</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+     <div class="card-hover bg-gradient-to-br from-red-600 to-red-700 p-8 rounded-2xl shadow-xl text-white text-center">
+      <div class="text-6xl mb-6">
+       ⚡
+      </div>
+      <h3 class="text-2xl font-bold mb-4">Interaktif</h3>
+      <p class="text-red-100">Kombinasi teori singkat dan video membuat pembelajaran lebih engaging dan tidak membosankan</p>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-2xl shadow-xl text-white text-center">
+      <div class="text-6xl mb-6">
+       🎯
+      </div>
+      <h3 class="text-2xl font-bold mb-4">Mudah Dipahami</h3>
+      <p class="text-blue-100">Contoh nyata melalui video demonstrasi memudahkan siswa memahami teknik intonasi yang benar</p>
+     </div>
+     <div class="card-hover bg-gradient-to-br from-green-600 to-green-700 p-8 rounded-2xl shadow-xl text-white text-center">
+      <div class="text-6xl mb-6">
+       🌟
+      </div>
+      <h3 class="text-2xl font-bold mb-4">Efektif</h3>
+      <p class="text-green-100">Pendekatan bertahap yang terstruktur membuat pembelajaran lebih efektif dan terukur</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Dampak & Manfaat Section -->
+  <section id="dampak" class="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Dampak &amp; Manfaat</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+     <div class="bg-white p-8 rounded-2xl shadow-lg">
+      <h3 class="text-2xl font-bold text-red-600 mb-6 flex items-center"><span class="text-3xl mr-3">👨‍🎓</span> Untuk Siswa</h3>
+      <ul class="space-y-4">
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Meningkatkan kemampuan berbicara dengan intonasi yang tepat</p></li>
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Membangun kepercayaan diri saat presentasi di kelas</p></li>
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Belajar dengan cara yang menyenangkan dan tidak membosankan</p></li>
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Dapat berlatih secara mandiri kapan saja</p></li>
+      </ul>
+     </div>
+     <div class="bg-white p-8 rounded-2xl shadow-lg">
+      <h3 class="text-2xl font-bold text-blue-600 mb-6 flex items-center"><span class="text-3xl mr-3">👨‍🏫</span> Untuk Guru</h3>
+      <ul class="space-y-4">
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Media pembelajaran yang praktis dan siap pakai</p></li>
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Membantu menjelaskan materi intonasi dengan lebih konkret</p></li>
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Menghemat waktu persiapan mengajar</p></li>
+       <li class="flex items-start space-x-3"><span class="text-green-600 font-bold text-xl">✓</span> <p class="text-gray-700">Meningkatkan kualitas pembelajaran berbicara</p></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section><!-- Kesimpulan Section -->
+  <section id="kesimpulan" class="py-20 bg-gradient-to-br from-red-600 to-blue-600 text-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-4xl md:text-5xl font-bold mb-4">Kesimpulan</h2>
+     <div class="section-divider bg-white"></div>
+    </div>
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-8 md:p-12 rounded-3xl">
+     <p class="text-xl leading-relaxed mb-6"><span class="font-bold text-yellow-300">Suara Pintar</span> bukan sekadar flipbook teori, tetapi <span class="font-bold">media pembelajaran interaktif</span> yang memadukan penjelasan singkat dan video demonstrasi untuk membantu siswa kelas tinggi SD berlatih intonasi dengan cara yang menarik.</p>
+     <p class="text-xl leading-relaxed">Dengan memanfaatkan <span class="font-bold text-yellow-300">barcode</span> dan contoh nyata dari video, produk ini dapat menjadi <span class="font-bold">solusi efektif</span> untuk meningkatkan keterampilan berbicara dan mempresentasikan pada siswa secara bertahap, mudah, dan menyenangkan.</p>
+    </div>
+   </div>
+  </section><!-- Kontak Section -->
+  <section id="kontak" class="py-20 bg-white">
+   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Hubungi Kami</h2>
+     <div class="section-divider"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12">
+     <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
+      <div class="space-y-6">
+       <div class="flex items-start space-x-4">
+        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0"><span class="text-2xl text-white">📍</span>
+        </div>
+        <div>
+         <h4 class="font-bold text-gray-800 mb-1">Alamat</h4>
+         <p id="contact-alamat" class="text-gray-700">Jl. Mayor Abdurahman No.211, Kotakaler, Kec. Sumedang Utara, Kabupaten Sumedang, Jawa Barat 45322</p>
+        </div>
+       </div>
+       <div class="flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0"><span class="text-2xl text-white">📞</span>
+        </div>
+        <div>
+         <h4 class="font-bold text-gray-800 mb-1">Telepon</h4>
+         <p id="contact-telepon" class="text-gray-700">0821-2661-7226&nbsp;</p>
+        </div>
+       </div>
+       <div class="flex items-start space-x-4">
+        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0"><span class="text-2xl text-white">✉️</span>
+        </div>
+        <div>
+         <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+         <p id="contact-email" class="text-gray-700">muhamadadhani93@upi.edu</p>
+        </div>
+       </div>
+      </div>
+      <div class="mt-8">
+       <div class="bg-gray-200 rounded-xl overflow-hidden shadow-lg"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0877486184195!2d107.59451607499658!3d-6.862345893150441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6b8bf1c2a8d%3A0x5c3b6f8a4e8a9f0e!2sUniversitas%20Pendidikan%20Indonesia!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="bg-white p-4 text-center">
+         <p class="text-gray-700 font-semibold">📍 Lokasi Kami</p>
+         <p class="text-gray-600 text-sm mt-1">Gedung Isola - Universitas Pendidikan Indonesia</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Formulir Kontak</h3>
+      <form id="contact-form" class="space-y-6">
+       <div><label for="nama" class="block text-gray-700 font-semibold mb-2">Nama Lengkap</label> <input type="text" id="nama" name="nama" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-red-600 focus:outline-none transition" placeholder="Masukkan nama lengkap" required>
+       </div>
+       <div><label for="email-form" class="block text-gray-700 font-semibold mb-2">Email</label> <input type="email" id="email-form" name="email" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-blue-600 focus:outline-none transition" placeholder="nama@email.com" required>
+       </div>
+       <div><label for="pesan" class="block text-gray-700 font-semibold mb-2">Pesan</label> <textarea id="pesan" name="pesan" rows="5" class="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-red-600 focus:outline-none transition resize-none" placeholder="Tulis pesan Anda di sini..." required></textarea>
+       </div><button type="submit" class="w-full bg-gradient-to-r from-red-600 to-blue-600 text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition transform hover:scale-105"> Kirim Pesan </button>
+      </form>
+      <div id="form-message" class="mt-4 p-4 rounded-xl hidden"></div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-12">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+     <div class="flex justify-center items-center space-x-3 mb-6"><img src="https://kadowisudaku.com/wp-content/uploads/2017/09/Logo-Universitas-Pendidikan-Indonesia.png" alt="Logo UPI" class="w-12 h-12 object-contain" onerror="this.style.display='none';">
+      <h3 class="text-2xl font-bold">Suara Pintar</h3>
+     </div>
+     <p class="text-gray-500 text-sm">© 2025   - Universitas Pendidikan Indonesia</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+        const defaultConfig = {
+            hero_title: "Suara Pintar",
+            hero_slogan: "Kompak Cerdas Berkarakter",
+            cta_daftar: "Daftar Sekarang",
+            cta_prestasi: "Lihat Prestasi",
+            cta_hubungi: "Hubungi Kami",
+            alamat: "Jl. Mayor Abdurrahman No. 211, Kota Kaler, Sumedang, Jawa Barat",
+            telepon: "(022) 2013163",
+            email: "info@upi.edu",
+            primary_color: "#DC2626",
+            secondary_color: "#1E40AF",
+            accent_color: "#FFFFFF",
+            text_color: "#374151",
+            background_color: "#F9FAFB",
+            font_family: "system-ui",
+            font_size: 16
+        };
+
+        const config = window.elementSdk ? window.elementSdk.config : defaultConfig;
+
+        async function onConfigChange(config) {
+            const customFont = config.font_family || defaultConfig.font_family;
+            const baseFontStack = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+            const fontFamily = `${customFont}, ${baseFontStack}`;
+            const baseSize = config.font_size || defaultConfig.font_size;
+
+            document.body.style.fontFamily = fontFamily;
+            document.body.style.backgroundColor = config.background_color || defaultConfig.background_color;
+
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle) {
+                heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+                heroTitle.style.fontSize = `${baseSize * 3.5}px`;
+            }
+
+
+
+            const navTitle = document.getElementById('nav-title');
+            if (navTitle) {
+                navTitle.textContent = config.hero_title || defaultConfig.hero_title;
+                navTitle.style.fontSize = `${baseSize * 1.25}px`;
+            }
+
+            const navSlogan = document.getElementById('nav-slogan');
+            if (navSlogan) {
+                navSlogan.textContent = config.hero_slogan || defaultConfig.hero_slogan;
+                navSlogan.style.fontSize = `${baseSize * 0.75}px`;
+            }
+
+            const btnDaftar = document.getElementById('btn-daftar');
+            if (btnDaftar) {
+                btnDaftar.textContent = config.cta_daftar || defaultConfig.cta_daftar;
+                btnDaftar.style.backgroundColor = config.primary_color || defaultConfig.primary_color;
+                btnDaftar.style.fontSize = `${baseSize * 1.125}px`;
+            }
+
+            const btnPrestasi = document.getElementById('btn-prestasi');
+            if (btnPrestasi) {
+                btnPrestasi.textContent = config.cta_prestasi || defaultConfig.cta_prestasi;
+                btnPrestasi.style.backgroundColor = config.secondary_color || defaultConfig.secondary_color;
+                btnPrestasi.style.fontSize = `${baseSize * 1.125}px`;
+            }
+
+            const btnHubungi = document.getElementById('btn-hubungi');
+            if (btnHubungi) {
+                btnHubungi.textContent = config.cta_hubungi || defaultConfig.cta_hubungi;
+                btnHubungi.style.fontSize = `${baseSize * 1.125}px`;
+            }
+
+            const contactAlamat = document.getElementById('contact-alamat');
+            if (contactAlamat) {
+                contactAlamat.textContent = config.alamat || defaultConfig.alamat;
+                contactAlamat.style.fontSize = `${baseSize}px`;
+            }
+
+            const contactTelepon = document.getElementById('contact-telepon');
+            if (contactTelepon) {
+                contactTelepon.textContent = config.telepon || defaultConfig.telepon;
+                contactTelepon.style.fontSize = `${baseSize}px`;
+            }
+
+            const contactEmail = document.getElementById('contact-email');
+            if (contactEmail) {
+                contactEmail.textContent = config.email || defaultConfig.email;
+                contactEmail.style.fontSize = `${baseSize}px`;
+            }
+
+            const allHeadings = document.querySelectorAll('h2');
+            allHeadings.forEach(h => {
+                h.style.fontSize = `${baseSize * 2.5}px`;
+            });
+
+            const allSubheadings = document.querySelectorAll('h3');
+            allSubheadings.forEach(h => {
+                h.style.fontSize = `${baseSize * 1.5}px`;
+            });
+
+            const allParagraphs = document.querySelectorAll('p');
+            allParagraphs.forEach(p => {
+                p.style.fontSize = `${baseSize}px`;
+            });
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities: (config) => ({
+                    recolorables: [
+                        {
+                            get: () => config.primary_color || defaultConfig.primary_color,
+                            set: (value) => {
+                                config.primary_color = value;
+                                window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.secondary_color || defaultConfig.secondary_color,
+                            set: (value) => {
+                                config.secondary_color = value;
+                                window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.background_color || defaultConfig.background_color,
+                            set: (value) => {
+                                config.background_color = value;
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.text_color || defaultConfig.text_color,
+                            set: (value) => {
+                                config.text_color = value;
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.accent_color || defaultConfig.accent_color,
+                            set: (value) => {
+                                config.accent_color = value;
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        }
+                    ],
+                    borderables: [],
+                    fontEditable: {
+                        get: () => config.font_family || defaultConfig.font_family,
+                        set: (value) => {
+                            config.font_family = value;
+                            window.elementSdk.setConfig({ font_family: value });
+                        }
+                    },
+                    fontSizeable: {
+                        get: () => config.font_size || defaultConfig.font_size,
+                        set: (value) => {
+                            config.font_size = value;
+                            window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }),
+                mapToEditPanelValues: (config) => new Map([
+                    ["hero_title", config.hero_title || defaultConfig.hero_title],
+                    ["hero_slogan", config.hero_slogan || defaultConfig.hero_slogan],
+                    ["cta_daftar", config.cta_daftar || defaultConfig.cta_daftar],
+                    ["cta_prestasi", config.cta_prestasi || defaultConfig.cta_prestasi],
+                    ["cta_hubungi", config.cta_hubungi || defaultConfig.cta_hubungi],
+                    ["alamat", config.alamat || defaultConfig.alamat],
+                    ["telepon", config.telepon || defaultConfig.telepon],
+                    ["email", config.email || defaultConfig.email]
+                ])
+            });
+
+            onConfigChange(window.elementSdk.config);
+        } else {
+            onConfigChange(defaultConfig);
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email-form').value;
+            const pesan = document.getElementById('pesan').value;
+
+            formMessage.textContent = `Terima kasih ${nama}! Pesan Anda telah diterima. Kami akan menghubungi Anda melalui ${email} segera.`;
+            formMessage.className = 'mt-4 p-4 rounded-xl bg-green-100 text-green-800';
+            formMessage.classList.remove('hidden');
+
+            contactForm.reset();
+
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+	  
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a166d93646eda7d',t:'MTc2MzYyNTc3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
